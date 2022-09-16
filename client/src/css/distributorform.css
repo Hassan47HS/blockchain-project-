@@ -4,14 +4,14 @@ body {
 }
 
 .form {
-  height: auto;
+  height: 730px;
   width: 600px;
   /* background-image: linear-gradient(
     to bottom right,
     rgba(255, 255, 255, 0.3) 0%,
     rgba(255, 255, 255, 0.1) 100%
   ); */
-  background-color: #F7FAFF;
+  background-color: var(--formColor);
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -29,7 +29,6 @@ body {
 }
 .form * {
   font-family: "Poppins", sans-serif;
-
   letter-spacing: 0.5px;
   outline: none;
   border: none;
@@ -42,7 +41,7 @@ body {
 }
 
 .form-title{
-  color: var(--primaryColor);
+  color: var(--color2);
 }
 
 .lable {

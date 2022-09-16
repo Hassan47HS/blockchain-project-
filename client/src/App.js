@@ -19,7 +19,7 @@ import SideBar from "./components/SideBar";
 import Authenticate from "./components/Authenticate";
 import GetStarted from "./components/getStarted";
 
-const CONTRACT_ADDRESS = "0x3B28c2C990a53E2c7658d35f868052B19f03add9";
+const CONTRACT_ADDRESS = "0x90D5549392c26620c0541BA4eb82E7DCB2d4d3D8";
 
 library.add(fas);
 

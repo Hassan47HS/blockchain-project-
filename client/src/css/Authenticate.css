@@ -2,3 +2,11 @@
   display: flex;
   justify-content: center;
 }
+h3,h2
+{
+  color: #bdc3c7;
+}
+span
+{
+  color: #bdc3c7;
+}

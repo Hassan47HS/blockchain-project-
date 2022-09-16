@@ -114,7 +114,6 @@ const DistributorForm = ({ contract, account }) => {
           <h2 className="form-title">Register Here</h2>
           <br />
           <label className="lable">Name</label>
-
           <input
             type="text"
             placeholder="Name"
@@ -134,7 +133,6 @@ const DistributorForm = ({ contract, account }) => {
             required
           />
           <br />
-
           <label className="lable">Email</label>
           <input
             type="text"

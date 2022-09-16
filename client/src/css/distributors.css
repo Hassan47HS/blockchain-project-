@@ -3,12 +3,12 @@
   /* margin: 25px; */
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: 600px;
+  min-width: 00px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   margin: 0px auto;
 }
 .styled-table thead tr {
-  background-color: #551a8b;
+  background-color: #243B55;
   color: #ffffff;
   text-align: left;
   height: 50px;
@@ -22,9 +22,9 @@
 }
 
 .styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #551a8a;
+  border-bottom: 2px solid #243B55;
 }
 .styled-table tbody tr.active-row {
   font-weight: bold;
-  color: #551a8a;
+  color: #243B55;
 }

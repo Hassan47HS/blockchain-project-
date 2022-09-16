@@ -9,7 +9,7 @@ const Authenticate = ({ account }) => {
   return (
     <>
       <div className="cam">
-        <h4 style={{ color: "#000", position: "fixed", right: 8, top: 2 }}>
+        <h4 style={{ color: "#bdc3c7", position: "fixed", right: 8, top: 2 }}>
           Wallet Address:{" "}
           {account.substring(0, 4) +
             "..." +

@@ -1,8 +1,8 @@
 import React from "react";
 import "../css/home.css";
-import pic from '../pic1.jpeg'
-import pic2 from '../pic2.webp'
-import pic3 from '../pic3.jpg'
+import pic from '../pic1.png'
+import pic2 from '../pic2.jpg'
+import pic3 from '../Pic3.jpg'
 import { NavLink } from "react-router-dom";
 
 const Home = ({ account }) => {

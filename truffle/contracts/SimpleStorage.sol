@@ -14,7 +14,6 @@ contract SimpleStorage {
     bool arrived;
     uint distributorId;
 }
-
  struct Person{ //struct for distributor
         uint id;
         string name;

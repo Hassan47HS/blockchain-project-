@@ -3,6 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import SideBar from "./SideBar";
 import MainBar from "./MainBar";
 import "../css/products.css";
+import { REACT_APP_WALLET_ADD } from '../utils/constants'
 
 const Greetings = () => {
   return (
@@ -32,7 +33,9 @@ const GetStarted = ({ contract, account }) => {
   console.log(account);
 
   const checkAccount = () => {
-    setShow(account === process.env.REACT_APP_WALLET_ADD);
+    // console.log('account===>', account, 'process.env.REACT_APP_WALLET_ADD===>', REACT_APP_WALLET_ADD)
+    // setShow(account === REACT_APP_WALLET_ADD);
+    setShow(account ? true : false)
   };
 
   useEffect(() => {

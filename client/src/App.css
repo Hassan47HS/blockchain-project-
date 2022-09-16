@@ -5,6 +5,9 @@
   --lightPrimaryColor: #5840bb;
   --secondaryColor:#7979B2;
   --light-bg: #e5eff7;
+  --homeColor: #bdc3c7;
+  --color2: #243B55;
+  --formColor: #bdc3c7;
 }
 html {
   font-size: 10px;
@@ -22,8 +25,7 @@ html {
   font-family: "IBM Plex Serif", serif !important;
 }
 body {
-  /* background-image: url("../public/assets/images/light-theme.png"); */
-  /* background-color: black; */
+  background-color: #0F2027;
   background-position: center;
   background-size: cover;
 }
@@ -33,8 +35,8 @@ body {
   width: 400px;
   background-image: linear-gradient(
     to bottom right,
-    rgba(255, 255, 255, 0.3) 0%,
-    rgba(255, 255, 255, 0.1) 100%
+    #203A43,
+    #2C5364
   );
   position: absolute;
   transform: translate(-50%, -50%);
@@ -57,7 +59,7 @@ body {
 .connectWalletBtn {
   text-decoration: none;
   /* border: 3px solid FEF8F8; */
-  color: #551a8a;
+  color: #DBDBDB;
   padding: 10px 60px;
   font-size: 28px;
   font-family: sans-serif;
@@ -85,7 +87,7 @@ body {
 
 .secondary-txt{
   font-size: 2rem;
-  color: var(--secondaryColor);
+  color: var(--color2);
 }
 
 .nav-link-btn{

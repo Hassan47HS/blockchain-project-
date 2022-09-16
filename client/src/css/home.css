@@ -79,7 +79,7 @@ h2 {
   min-width:800px;
   max-width: 1200px;
   /* min-width: 600px; */
-  color: var(--lightPrimaryColor);
+  color: var(--homeColor);
   font-family: "Courgette", cursive;
   text-align: center;
 
@@ -88,6 +88,7 @@ h2 {
 #greetings {
   font-size: 6.5rem;
   margin-bottom: 0.5rem;
+  
 }
 #subtitle-txt {
   font-size: 3rem;
@@ -127,8 +128,8 @@ h2 {
 }
 
 .options-image-caption {
+  color: var(--homeColor);
   margin-top: 24px;
-  color: var(--primaryColor);
   font-family: "Inter", sans-serif;
   font-size: 3rem;
   text-align: center;
