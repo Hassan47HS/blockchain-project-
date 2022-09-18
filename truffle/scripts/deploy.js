@@ -14,9 +14,9 @@ const main = async () => {
     50,
     1,
     "serum",
-    "rohit",
-    "mumbai",
-    "gujrat"
+    "hassan",
+    "lahore",
+    "karachi"
   );
   console.log("asset Created", assetCreate.hash);
 

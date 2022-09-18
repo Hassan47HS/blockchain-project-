@@ -25,8 +25,7 @@ contract SimpleStorage {
     mapping(uint  => Person) private distributorStruct;
     uint public distributorCount=0;
     uint public assetCount=0;
-
-    event RejectDistributor(string  name,string  add,string  email,string  phone);
+    
 
      function insertDistributor(string memory name,string memory add,string memory email,string memory phone) public returns(bool)
     {
@@ -51,10 +50,10 @@ contract SimpleStorage {
       return id;
     }
 
-    function balance(uint _amount) public pure returns(bool){
-        require(_amount<20,"Balance need to be greater than 20");
-        return true;
-    }
+    // function balance(uint _amount) public pure returns(bool){
+    //     require(_amount<20,"Balance need to be greater than 20");
+    //     return true;
+    //}
 //end of distributor
 mapping(uint  => Asset) private assetStore;
 mapping(address => mapping(uint => bool)) private walletStore;
@@ -62,17 +61,10 @@ function createAsset(string memory name, string memory description, uint distrib
       assetStore[assetCount] = Asset(name, description,cost,quantity,manufacturer,customer,addressFrom,addressTo,true,false,distributorId);
       walletStore[msg.sender][assetCount] = true;
       assetCount++;
-    
 }
-
-
 function transferAsset(address to, uint i) public{
     require(assetStore[assetCount].initialized==true,"No asset with this UUID exists");
-
- 
     require(walletStore[msg.sender][i]==true,"Sender does not own this asset.");
- 
- 
     walletStore[msg.sender][i] = false;
     walletStore[to][i] = true;
 }
@@ -84,7 +76,6 @@ function transferAsset(address to, uint i) public{
 }
 
 function isOwnerOf(address owner, uint i) public view returns (bool) {
- 
     if(walletStore[owner][i]) {
         return true;
     }
